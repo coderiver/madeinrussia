@@ -19,7 +19,13 @@ ul, ol { list-style-type: none; }
 @media only screen and (min-device-width: 320px) and (max-device-width: 480px) { * { -webkit-text-size-adjust: none; } }
 table { border-spacing: 0; border-collapse: collapse; width: 100%; }
 
-body { font-size: 12px; font-family: Arial, sans-serif; line-height: 1.4; }
+@font-face { font-family: HouschkaProMedium; src: url("../fonts/houschkapro-medium.eot"); src: url("../fonts/houschkapro-medium.eot?#iefix") format("embedded-opentype"), url("../fonts/houschkapro-medium.woff") format("woff"), url("../fonts/houschkapro-medium.ttf") format("truetype"); font-weight: normal; font-style: normal; }
+
+@font-face { font-family: HouschkaProBold; src: url("../fonts/houschkapro-bold.eot"); src: url("../fonts/houschkapro-bold.eot?#iefix") format("embedded-opentype"), url("../fonts/houschkapro-bold.woff") format("woff"), url("../fonts/houschkapro-bold.ttf") format("truetype"); font-weight: normal; font-style: normal; }
+
+@font-face { font-family: HouschkaProDemiBold; src: url("../fonts/houschkapro-demibold.eot"); src: url("../fonts/houschkapro-demibold.eot?#iefix") format("embedded-opentype"), url("../fonts/houschkapro-demibold.woff") format("woff"), url("../fonts/houschkapro-demibold.ttf") format("truetype"); font-weight: normal; font-style: normal; }
+
+body { font-size: 12px; font-family: "HouschkaProMedium", arial, sans-serif; line-height: 1.4; }
 
 .l { *zoom: 1; }
 .l:after { content: " "; display: table; clear: both; }
