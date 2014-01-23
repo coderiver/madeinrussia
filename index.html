@@ -8,6 +8,7 @@
 	<link rel="stylesheet" media="screen" href="css/screen.css" >
 	<!--[if IE]><script src="js/html5shiv.js"></script><![endif]-->
 	<script src="js/jquery.js"></script>
+	<script src="js/cycle.js"></script>
 	<script src="js/common.js"></script>
 </head>
 <body>
@@ -19,18 +20,113 @@
 			<h1 class="logo">
 				<a href="#"></a>
 			</h1>
-			<nav class="navigation">
+			<nav class="nav">
 				<ul>
-					<li><a href="#">О каталоге</a></li>
-					<li><a href="#">для участников</a></li>
-					<li><a href="#">информационным партнерам</a></li>
-					<li><a href="#">СМИ о нас</a></li>
-					<li><a href="#">контакты</a></li>
-					<li><a href="#">оправить заявку на участие</a></li>
+					<li class="nav__link"><a href="#">О каталоге</a></li>
+					<li class="nav__link"><a href="#">для участников</a></li>
+					<li class="nav__link"><a href="#">информационным партнерам</a></li>
+					<li class="nav__link"><a href="#">СМИ о нас</a></li>
+					<li class="nav__link"><a href="#">контакты</a></li>
+					<li class="nav__link"><a href="#">отправить заявку на участие</a></li>
 				</ul>
 			</nav>
 		</div>
 	</header>
+	<!-- BEGIN slider -->
+	<section class="slider container">
+		<div class="example-pager"></div>
+		<div class="cycle-slideshow"
+		data-cycle-slides="> div"
+    	data-cycle-pager=".example-pager" >
+			<div class="slider__item slide1">
+				<div class="slide1__content">
+					<h2 class="h2">Что такое «сделано в россии»</h2>
+					<p class="slide1__text1">Интернет-каталог <a href="#">www.madeinrussia.ru</a></p>
+					<p class="slide1__text2">
+						Печатные издания "Сделано в России"
+						<i>
+							(Тематические каталоги;<br>
+							коммерческие бренды;<br>
+							культурные бренды;<br>
+							экспортеры;<br>
+							символы России и др;)
+						</i> 
+					</p>
+					<p class="slide1__text3">каталог "Сделано в России" для мобильных устройств (iOS и Android)</p>
+					<p class="slide1__text4">Логотип и концепция единого бренда "Сделано в России"</p>
+					<p class="slide1__text5">Каталог с информацией о российских коммерческих и культурных брендах, символах страны, экспортерах и отраслевых экспертах</p>
+					<p class="slide1__text6">на <span>15</span> языках</p>
+				</div>
+			</div>
+			<div class="slider__item slide1">
+				<div class="slide1__content">
+					<h2 class="h2">Что такое «сделано в россии»</h2>
+					<p class="slide1__text1">Интернет-каталог <a href="#">www.madeinrussia.ru</a></p>
+					<p class="slide1__text2">
+						Печатные издания "Сделано в России"
+						<i>
+							(Тематические каталоги;<br>
+							коммерческие бренды;<br>
+							культурные бренды;<br>
+							экспортеры;<br>
+							символы России и др;)
+						</i> 
+					</p>
+					<p class="slide1__text3">каталог "Сделано в России" для мобильных устройств (iOS и Android)</p>
+					<p class="slide1__text4">Логотип и концепция единого бренда "Сделано в России"</p>
+					<p class="slide1__text5">Каталог с информацией о российских коммерческих и культурных брендах, символах страны, экспортерах и отраслевых экспертах</p>
+					<p class="slide1__text6">на <span>15</span> языках</p>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- END slider -->
+	<!-- BEGIN announce -->
+	<div class="announce">
+		<div class="container announce__inner">
+			<div class="announce__content">
+				<div class="announce__date">
+					<p class="announce__title">1 марта 2014</p>
+					<p class="announce__text">открытие каталога на русском и английском языках</p>
+				</div>
+				<div class="announce__counter">Получено 48 заявок на участие</div>
+			</div>
+		</div>
+	</div>
+	<!-- END announce -->
+	<!-- BEGIN request -->
+	<div class="request">
+		<div class="container">
+			<div class="request__inner">
+				<h3 class="h3">Отправьте заявку на участие</h3>
+				<form action="">
+					<div class="request-form">
+						<div class="request-form__left">
+							<input type="text" class="input" placeholder="название компании">
+							<input type="text" class="input" placeholder="имя контактного лица">
+							<input type="text" class="input" placeholder="e-mail">
+							<input type="text" class="input" placeholder="телефон для связи">
+						</div>
+						<div class="request__right">
+							<textarea class="textarea" placeholder="можете что-то дописать"></textarea>
+						</div>
+						<div class="request__btn">
+							<button class="btn" type="submit">Отправить</button>
+						</div>
+					</div>
+				</form>
+				<div class="partners-info">
+					<div class="partners-info__title">Для информационных партнеров</div>
+					<ul class="partners-info__list">
+						<li>sdsf</li>
+						<li>sdsf</li>
+						<li>sdsf</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- END request -->
 </div>
 <!-- END out-->
 

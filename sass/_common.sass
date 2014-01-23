@@ -69,7 +69,8 @@ body
 	width: 1024px
 	margin: 0 auto
 .header
-	padding: 37px 0 0 	
+	padding: 37px 0 0
+	margin-bottom: 50px 	
 .logo
 	display: block
 	margin: 0 auto 25px 
@@ -77,8 +78,255 @@ body
 	a
 		display: block
 		height: 100%
-.navigation
+.nav
+	position: relative
 	ul
 		+justify
-	li
-		+justify-child
+	&:before
+		content: ""
+		position: absolute
+		top: 0
+		bottom: 0
+		left: 40px
+		right: 40px
+		+border-radius(4px)
+		background: #ececec
+		z-index: 0 
+.nav__link
+	position: relative
+	height: 42px
+	+justify-child
+	line-height: 42px 
+	z-index: 2 
+	a
+		font-size: 14px
+		text-transform: uppercase
+		color: #242424
+		text-decoration: none
+.h2
+	font-size: 33px
+	color: #242424
+	font-weight: normal
+	text-transform: uppercase
+.slider
+	position: relative
+	height: 550px
+	margin-bottom: 40px 	
+.example-pager
+	position: absolute
+	bottom: 0px
+	left: 0
+	right: 0
+	text-align: center
+	span
+		display: inline-block
+		width: 15px
+		height: 15px
+		margin: 0 8px  
+		+border-radius(50%)
+		background: #d8d8d8
+		+hide-text
+		cursor: pointer
+span.cycle-pager-active
+	background: #ff2241
+.slider__item
+	width: 100% 
+	text-align: center
+.slide1__content
+	position: relative
+	width: 880px
+	height: 550px 
+	margin: 0 auto 
+	color: #242424 
+	background: url(../img/slide1.jpg) no-repeat
+.slide1__text1, .slide1__text2
+	position: absolute
+	top: 110px
+	left: 0
+	width: 135px
+	font-size: 15px
+	text-align: right
+	line-height: 1
+	&:before
+		content: ""
+		position: absolute
+		right: -16px
+		top: 50%
+		margin-top: -8px 
+		+s(arr-right)
+	a
+		text-decoration: none
+		color: #242424
+		font-size: 15px
+.slide1__text2
+	top: 345px
+	i
+		position: absolute
+		top: 100%
+		right: 0
+		font-size: 10px
+		padding-top: 2px
+		font-style: normal
+.slide1__text3, .slide1__text4
+	position: absolute
+	right: 0px
+	top: 80px
+	width: 135px
+	font-size: 15px
+	text-align: left
+	line-height: 1
+	&:before
+		content: ""
+		position: absolute
+		left: -16px
+		top: 50%
+		margin-top: -8px 
+		+s(arr-left)
+.slide1__text4
+	top: 325px
+.slide1__text5, .slide1__text6
+	position: absolute
+	top: 80px
+	left: 50% 
+	width: 214px
+	margin-left: -107px
+	line-height: 1
+	font-size: 15px    
+.slide1__text6
+	top: 350px
+	font-size: 30px 
+	span
+		+hp_b
+		color: #ef4040
+		font-size: 40px
+		
+// announce
+.announce
+	background: url(../img/pattern1.jpg)
+.announce__inner
+	position: relative
+	padding: 75px 0 95px
+	text-align: center 
+	&:before
+		content: ""
+		position: absolute
+		bottom: -32px
+		left: 0
+		+s(date-triangle)
+.announce__content
+	display: inline-block
+	width: 450px
+	min-height: 140px 
+.announce__date
+	position: relative
+	margin-bottom: 20px 
+	text-align: left
+	padding-left: 110px 
+	background: url(../img/date.png) no-repeat
+.announce__title
+	font-size: 32px
+	color: #fff
+	+hp_b
+	text-transform: uppercase
+.announce__text
+	font: 19px 'Times New Roman', serif
+	color: #fff
+	line-height: 1
+	text-transform: uppercase
+.announce__counter
+	height: 43px
+	line-height: 43px
+	text-align: center
+	+hp_b
+	text-transform: uppercase
+	font-size: 23px
+	color: #fff
+	+border-radius(4px)
+	background: #ff2241 
+.request
+	padding-top: 70px
+	background: #f5f5f5
+.request__inner
+	padding: 0 80px
+	.h3
+		margin-bottom: 20px  	
+.h3
+	font-size: 23px
+	font-style: normal
+.request-form
+	+clr
+	margin-bottom: 25px
+.request-form__left
+	float: left	
+.request__right
+	float: right		 	 			 		 
+.input
+	display: block
+	width: 310px
+	+border-radius(4px) 
+	margin-bottom: 15px
+	padding: 0 13px 
+	+hp_db
+	font-size: 17px
+	color: #fff
+	background: #522838
+	border: none
+	height: 43px
+	+placeholder-color(#fff)
+	+transition(box-shadow 200ms linear)
+	&:focus
+		+box-shadow(0 0px 8px #661A1A)		
+.textarea
+	display: block
+	width: 479px
+	max-width: 479px
+	height: 194px
+	max-height: 194px 
+	+border-radius(4px)
+	padding: 13px	
+	border: none
+	+hp_db
+	font-size: 17px
+	color: #fff
+	background: #522838
+	+placeholder-color(#fff)
+	+transition(box-shadow 200ms linear)
+	&:focus
+		+box-shadow(0 0px 8px #661A1A)
+.request__btn
+	clear: both
+	text-align: right
+.btn
+	display: inline-block
+	height: 36px
+	line-height: 36px
+	padding: 0 26px
+	font-size: 19px
+	color: #fff
+	+hp_db 
+	+border-radius(18px)
+	background: #532939
+.partners-info
+	text-align: center	
+.partners-info__title
+	position: relative
+	display: inline-block
+	text-align: center
+	margin-bottom: 40px
+	height: 44px
+	line-height: 44px
+	padding: 0 22px
+	+border-radius(4px)
+	background: #ff2241 
+	+hp_b
+	font-size: 23px
+	color: #fff
+	&:before
+		content: ""
+		position: absolute
+		bottom: -10px
+		left: 50%
+		margin-left: -11px 
+		+arr(22, 10, #ff2241, b)
+		
+	   
