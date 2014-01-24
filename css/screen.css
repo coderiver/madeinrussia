@@ -120,6 +120,15 @@ span.cycle-pager-active { background: #ff2241; }
 .partners-info__title { position: relative; display: inline-block; text-align: center; margin-bottom: 40px; height: 44px; line-height: 44px; padding: 0 22px; -webkit-border-radius: 4px; -moz-border-radius: 4px; -ms-border-radius: 4px; -o-border-radius: 4px; border-radius: 4px; background: #ff2241; font-family: "HouschkaProBold", arial, sans-serif; font-size: 23px; color: white; }
 .partners-info__title:before { content: ""; position: absolute; bottom: -10px; left: 50%; margin-left: -11px; width: 0px; height: 0px; border-style: solid; border-width: 10px 11px 0 11px; border-color: #ff2241 transparent transparent transparent; }
 
+.h4 { font-size: 20px; font-family: "HouschkaProBold", arial, sans-serif; }
+
+.partners-info__list { text-align: justify; line-height: 0; font-size: 1px; text-justify: newspaper; zoom: 1; text-align-last: justify; }
+.partners-info__list:after { content: ""; display: inline-block; width: 100%; height: 0px; visibility: hidden; overflow: hidden; }
+.partners-info__list li { width: 30%; display: inline-block; line-height: normal; vertical-align: top; font-size: 14px; }
+.partners-info__list li .h4 { margin-bottom: 15px; }
+.partners-info__list li p { margin-bottom: 20px; text-align: left; font-size: 15px; }
+.partners-info__list li p i { font-family: "HouschkaProDemiBold", arial, sans-serif; font-style: normal; }
+
 .l { *zoom: 1; }
 .l:after { content: " "; display: table; clear: both; }
 .l .l-col1 { float: left; width: 20%; }
