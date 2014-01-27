@@ -1,4 +1,7 @@
 $(document).ready(function() {
+	
+	// tabs
+
 	function tab() {
        	$(".js-tab").each(function(){
          	var tab_link = $(this).find("a");
@@ -18,4 +21,40 @@ $(document).ready(function() {
         });
     } 
     tab();
+
+    // member popup toggle
+    function member_popup(){
+    	var popup = $(".team-member__popup");
+    	var popup_close = $(".team-member__close");	
+    	var popup_call = $(".team-member__img")
+    	
+    	popup.hide();
+
+    	popup_call.click(function(event){
+    		popup.hide();	
+    		$(this).parent().find(popup).show();
+    		event.stopPropagation();
+    	});
+    	popup_close.click(function(){
+    		$(this).parent().hide();
+    	});
+    	popup.click(function(event){
+    		event.stopPropagation();
+    	});
+    }
+    member_popup();
+
+    // request alert hide
+
+    $(".request-form__close").click(function(){
+    	$(this).parent().hide();
+    });
+
+
+
+
+    $(document).click(function(event){
+		$(".team-member__popup").hide();
+	});
+
 });

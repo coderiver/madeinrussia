@@ -254,8 +254,28 @@ span.cycle-pager-active
 	font-size: 23px
 	font-style: normal
 .request-form
+	position: relative
 	+clr
 	margin-bottom: 25px
+.request-form__popup
+	position: absolute
+	top: 67px
+	left: 50%
+	width: 304px
+	margin-left: -187px
+	padding: 20px 35px
+	+border-radius(6px)
+	text-align: center
+	color: #fff
+	font-size: 18px
+	+hp_b
+	background: #ff2241
+.request-form__close
+	position: absolute
+	top: 11px
+	right: 11px
+	+s(close)
+	cursor: pointer    	
 .request-form__left
 	float: left	
 .request__right
@@ -490,6 +510,7 @@ span.cycle-pager-active
 	+justify
 	margin-top: 50px
 .team-member
+	position: relative
 	width: 18% 
 	+justify-child
 .team-member__img
@@ -498,6 +519,7 @@ span.cycle-pager-active
 	margin: 0 auto 20px 
 	+border-radius(50%)
 	overflow: hidden
+	cursor: pointer
 	img
 		width: 100%
 		height: auto
@@ -507,7 +529,76 @@ span.cycle-pager-active
 		margin-bottom: 10px
 	p
 		font-size: 15px
-		
+.team-member__popup
+	position: absolute
+	bottom: 90%
+	left: 0px
+	width: 223px 
+	padding: 25px 28px
+	+border-radius(4px)
+	background: #ff2141
+	+box-shadow(2px 4px 3px rgba(0,0,1,.3))
+	z-index: 2
+	input
+		height: 28px
+		width: 100%
+		margin-bottom: 6px
+		background: #542939
+		padding: 0 10px
+		color: #fff
+		+box
+		+hp_db
+		+placeholder
+			color: #88727a
+			font-size: 14px
+	textarea
+		height: 57px
+		max-height: 57px
+		width: 100%
+		max-width: 100%
+		margin-bottom: 6px
+		background: #542939
+		padding: 10px
+		border: none
+		color: #fff
+		+hp_db
+		+box
+		+placeholder
+			color: #88727a
+			font-size: 14px 		
+	&:before
+		content: ""
+		position: absolute
+		bottom: -13px
+		left: 36px
+		+arr(26, 13, #ff2241, b)
+.team-member__close
+	position: absolute
+	top: 11px
+	right: 11px
+	+s(close)
+	cursor: pointer
+.team-member__title
+	color: #fff
+	font-size: 18px
+	+hp_b
+	margin-bottom: 12px
+.team-member__submit
+	text-align: right
+	button
+		+border-radius(13px)
+		background: #532939
+		height: 26px
+		line-height: 26px
+		text-align: center
+		padding: 0 20px
+		+hp_db
+		color: #fff
+		font-size: 14px
+		&:hover
+			color: rgba(255,255,255, .7)
+
+
 // feedback
 .map
 	position: relative
