@@ -138,6 +138,35 @@ body
 		cursor: pointer
 span.cycle-pager-active
 	background: #ff2241
+.slider__nav
+	position: relative
+.slider__prev, .slider__next
+	position: absolute
+	top: 200px
+	left: 30px
+	height: 70px
+	width: 70px
+	+border-radius(50%)
+	background: #f4f4f4
+	cursor: pointer
+	z-index: 99999
+	&:hover
+		background: #ff2241 
+	&:before
+		content: ""
+		position: absolute
+		top: 18px
+		left: 22px
+		+s(nav-left-big)   	
+.slider__next
+	left: auto
+	right: 30px
+	&:before
+		content: ""
+		position: absolute
+		top: 18px
+		left: 27px
+		+s(nav-right-big)
 .slider__item
 	width: 100% 
 	text-align: center
@@ -401,6 +430,7 @@ span.cycle-pager-active
 		+justify-child
 		.h4
 			margin-bottom: 15px
+			text-align: left
 		p
 			margin-bottom: 20px
 			text-align: left

@@ -66,13 +66,13 @@ $(document).ready(function() {
     scroll_top();
 
     $(".nav__link a").click(function (){
-            var page = $(this).attr("href");
+        var page = $(this).attr("href");
     
-            $('html, body').animate({
-                scrollTop: $(page).offset().top - 35
-            }, 500);
-            return false;
-        });
+        $('html, body').animate({
+            scrollTop: $(page).offset().top - 35
+        }, 500);
+        return false;
+    });
 
     // window scroll
     
