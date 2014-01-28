@@ -34,10 +34,11 @@ body { font-size: 12px; font-family: "HouschkaProMedium", arial, sans-serif; lin
 .logo { display: block; margin: 0 auto 25px; background: url('../img/icons-s42ae219f8a.png') 0 -42px no-repeat; width: 103px; height: 73px; }
 .logo a { display: block; height: 100%; }
 
-.nav { position: relative; }
-.nav ul { text-align: justify; line-height: 0; font-size: 1px; text-justify: newspaper; zoom: 1; text-align-last: justify; }
+.nav { position: relative; background: white; }
+.nav ul { position: relative; text-align: justify; line-height: 0; font-size: 1px; text-justify: newspaper; zoom: 1; text-align-last: justify; }
 .nav ul:after { content: ""; display: inline-block; width: 100%; height: 0px; visibility: hidden; overflow: hidden; }
-.nav:before { content: ""; position: absolute; top: 0; bottom: 0; left: 40px; right: 40px; -webkit-border-radius: 4px; -moz-border-radius: 4px; -ms-border-radius: 4px; -o-border-radius: 4px; border-radius: 4px; background: #ececec; z-index: 0; }
+.nav ul:before { content: ""; position: absolute; top: 0; bottom: 0; left: 40px; right: 40px; -webkit-border-radius: 4px; -moz-border-radius: 4px; -ms-border-radius: 4px; -o-border-radius: 4px; border-radius: 4px; background: #ececec; z-index: 0; }
+.nav.fixed { position: fixed; top: 0px; left: 0; right: 0; z-index: 99999; }
 
 .nav__link { position: relative; height: 42px; display: inline-block; line-height: normal; vertical-align: top; font-size: 14px; line-height: 42px; z-index: 2; }
 .nav__link a { font-size: 14px; text-transform: uppercase; color: #242424; text-decoration: none; }
@@ -46,7 +47,7 @@ body { font-size: 12px; font-family: "HouschkaProMedium", arial, sans-serif; lin
 
 .slider { position: relative; height: 550px; margin-bottom: 40px; }
 
-.example-pager { position: absolute; bottom: 0px; left: 0; right: 0; text-align: center; }
+.example-pager { position: absolute; bottom: 0px; left: 0; right: 0; text-align: center; z-index: 9999; }
 .example-pager span { display: inline-block; width: 15px; height: 15px; margin: 0 8px; -webkit-border-radius: 50%; -moz-border-radius: 50%; -ms-border-radius: 50%; -o-border-radius: 50%; border-radius: 50%; background: #d8d8d8; font: 0/0 a; text-shadow: none; color: transparent; cursor: pointer; }
 
 span.cycle-pager-active { background: #ff2241; }
@@ -54,10 +55,9 @@ span.cycle-pager-active { background: #ff2241; }
 .slider__item { width: 100%; text-align: center; }
 
 .slide__content { position: relative; width: 880px; height: 550px; margin: 0 auto; color: #242424; }
+.slide__content img { max-height: 100%; }
 
 .slide__content_1 { background: url(../img/slide1.jpg) no-repeat; }
-
-.slide__content_2 { background: url(../img/slide2.jpg) 0 50% no-repeat; }
 
 .slide1__text1, .slide1__text2 { position: absolute; top: 110px; left: 0; width: 135px; font-size: 15px; text-align: right; line-height: 1; }
 .slide1__text1:before, .slide1__text2:before { content: ""; position: absolute; right: -16px; top: 50%; margin-top: -8px; background: url('../img/icons-s42ae219f8a.png') 0 -480px no-repeat; width: 8px; height: 17px; }
@@ -75,6 +75,16 @@ span.cycle-pager-active { background: #ff2241; }
 
 .slide1__text6 { top: 350px; font-size: 30px; }
 .slide1__text6 span { font-family: "HouschkaProBold", arial, sans-serif; color: #ef4040; font-size: 40px; }
+
+.slide-use { position: absolute; top: 30px; left: 30px; font-family: "HouschkaProDemiBold", arial, sans-serif; text-transform: uppercase; color: #542939; font-size: 17px; z-index: 2; }
+.slide-use .hint { top: 30px; left: 0; width: 200px; right: auto; font-size: 18px; }
+
+.slide8 .hint { width: 85px; }
+
+.slide9 img, .slide11 img { position: absolute; bottom: -40px; right: 0; height: 640px; max-height: initial; z-index: 1; }
+.slide9 .hint, .slide11 .hint { width: 85px; }
+
+.slide10 .hint { width: 100px; }
 
 .announce { background: url(../img/pattern1.jpg); }
 

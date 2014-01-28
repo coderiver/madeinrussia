@@ -16,24 +16,26 @@
 <!-- BEGIN  out-->
 <div class="out">
 	<header class="header">
-		<div class="container">
-			<h1 class="logo">
-				<a href="#"></a>
-			</h1>
+		<h1 class="logo">
+			<a href="#"></a>
+		</h1>
+		<div class="nav-wrap">
 			<nav class="nav">
-				<ul>
-					<li class="nav__link"><a href="#">О каталоге</a></li>
-					<li class="nav__link"><a href="#">для участников</a></li>
-					<li class="nav__link"><a href="#">информационным партнерам</a></li>
-					<li class="nav__link"><a href="#">СМИ о нас</a></li>
-					<li class="nav__link"><a href="#">контакты</a></li>
-					<li class="nav__link"><a href="#">отправить заявку на участие</a></li>
-				</ul>
+				<div class="container">
+					<ul>
+						<li class="nav__link"><a href="#section1">О каталоге</a></li>
+						<li class="nav__link"><a href="#section2">для участников</a></li>
+						<li class="nav__link"><a href="#section3">информационным партнерам</a></li>
+						<li class="nav__link"><a href="#section4">СМИ о нас</a></li>
+						<li class="nav__link"><a href="#section5">контакты</a></li>
+						<li class="nav__link"><a href="#section6">отправить заявку на участие</a></li>
+					</ul>
+				</div>
 			</nav>
 		</div>
 	</header>
 	<!-- BEGIN slider -->
-	<section class="slider container">
+	<section class="slider" id="section1">
 		<div class="example-pager"></div>
 		<div class="cycle-slideshow"
 		data-cycle-slides="> div"
@@ -61,18 +63,83 @@
 			<div class="slider__item slide2">
 				<div class="slide__content slide__content_2">
 					<h2 class="h2">В КАТАЛОГЕ<br>БУДУТ ПРЕДСТАВЛЕНЫ:</h2>
-					<ul class="slide2-list">
-						<li>
-							
-						</li>
-					</ul>
+					<img src="img/slide2.jpg" alt="">
+				</div>
+			</div>
+			<div class="slider__item">
+				<div class="slide__content">
+					<h2 class="h2">ЦЕЛЕВАЯ АУДИТОРИЯ<br>КАТАЛОГА «СДЕЛАНО В РОССИИ»</h2>
+					<img src="img/slide3.png" alt="">
+				</div>
+			</div>
+			<div class="slider__item">
+				<div class="slide__content">
+					<h2 class="h2">ПРЕИМУЩЕСТВА КАТАЛОГА<br>«СДЕЛАНО В РОССИИ»</h2>
+					<img src="img/slide4.jpg" alt="">
+				</div>
+			</div>
+			<div class="slider__item">
+				<div class="slide__content">
+					<h2 class="h2">СТОИМОСТЬ ГОДОВОГО РАЗМЕЩЕНИЯ<br>В КАТАЛОГЕ «СДЕЛАНО В РОССИИ»</h2>
+					<img src="img/slide5.png" alt="">
+				</div>
+			</div>
+			<div class="slider__item">
+				<div class="slide__content">
+					<h2 class="h2">ЧТО ПОЛУЧАЕТ КОМПАНИЯ ПРИ РАЗМЕЩЕНИИ<br>В КАТАЛОГЕ «СДЕЛАНО В РОССИИ»</h2>
+					<img src="img/slide6.png" alt="">
+				</div>
+			</div>
+			<div class="slider__item">
+				<div class="slide__content">
+					<div class="slide-use">
+						<p>применение</p>
+						<div class="hint">БИРКА НА ОДЕЖДУ</div>
+					</div>
+					<img src="img/slide7.jpg" alt="">
+				</div>
+			</div>
+			<div class="slider__item slide8">
+				<div class="slide__content">
+					<div class="slide-use">
+						<p>применение</p>
+						<div class="hint">ОДЕЖДА</div>
+					</div>
+					<img src="img/slide8.png" alt="">
+				</div>
+			</div>
+			<div class="slider__item slide9">
+				<div class="slide__content">
+					<div class="slide-use">
+						<p>применение</p>
+						<div class="hint">ТЕХНИКА</div>
+					</div>
+					<img src="img/slide9.jpg" alt="">
+				</div>
+			</div>
+			<div class="slider__item slide10">
+				<div class="slide__content">
+					<div class="slide-use">
+						<p>применение</p>
+						<div class="hint">ПРОДУКТЫ</div>
+					</div>
+					<img src="img/slide10.jpg" alt="">
+				</div>
+			</div>
+			<div class="slider__item slide11">
+				<div class="slide__content">
+					<div class="slide-use">
+						<p>применение</p>
+						<div class="hint">САМОЛЕТ</div>
+					</div>
+					<img src="img/slide11.jpg" alt="">
 				</div>
 			</div>
 		</div>
 	</section>
 	<!-- END slider -->
 	<!-- BEGIN announce -->
-	<div class="announce">
+	<div class="announce" id="section2">
 		<div class="container announce__inner">
 			<div class="announce__content">
 				<div class="announce__date">
@@ -85,7 +152,7 @@
 	</div>
 	<!-- END announce -->
 	<!-- BEGIN request -->
-	<div class="request">
+	<div class="request" id="section6">
 		<div class="container">
 			<div class="request__inner">
 				<h3 class="h3">Отправьте заявку на участие</h3>
@@ -135,7 +202,7 @@
 	</div>
 	<!-- END request -->
 	<!-- BEGIN brand -->
-	<div class="brand">
+	<div class="brand" id="section3">
 		<div class="brand__title">
 			С нами уже <span>6 брендов</span>. Подано заявок – <span>27</span>
 		</div>
@@ -201,7 +268,7 @@
 	</div>
 	<!-- END brand -->
 	<!-- BEGIN smi -->
-	<div class="smi container">
+	<div class="smi container" id="section4">
 		<div class="hint">СМИ</div>
 		<div class="smi__nav">
 			<!-- prev/next links -->
@@ -374,7 +441,7 @@
 	</div>
 	<!-- END team -->
 	<!-- BEGIN feedback -->
-	<div class="feedback">
+	<div class="feedback" id="section5">
 		<div class="map">
 			<iframe width="100%" height="100%" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.ru/?ie=UTF8&amp;ll=55.354135,40.297852&amp;spn=21.483151,67.631836&amp;t=m&amp;z=5&amp;output=embed"></iframe>
 			<div class="map-popup">

@@ -50,8 +50,35 @@ $(document).ready(function() {
     	$(this).parent().hide();
     });
 
+    // nav scroll 
+    function scroll_top() {
 
+        var nav = $(".nav");
+        var top = ($(".nav-wrap").offset().top);
 
+        if ($(window).scrollTop() >= top) {
+            nav.addClass('fixed');
+        }
+        else{
+            nav.removeClass('fixed');
+        } 
+    }
+    scroll_top();
+
+    $(".nav__link a").click(function (){
+            var page = $(this).attr("href");
+    
+            $('html, body').animate({
+                scrollTop: $(page).offset().top - 35
+            }, 500);
+            return false;
+        });
+
+    // window scroll
+    
+    $(window).scroll(function(){
+        scroll_top();
+    });
 
     $(document).click(function(event){
 		$(".team-member__popup").hide();

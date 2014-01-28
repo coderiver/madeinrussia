@@ -80,18 +80,26 @@ body
 		height: 100%
 .nav
 	position: relative
+	background: #FFF
 	ul
+		position: relative
 		+justify
-	&:before
-		content: ""
-		position: absolute
-		top: 0
-		bottom: 0
-		left: 40px
-		right: 40px
-		+border-radius(4px)
-		background: #ececec
-		z-index: 0 
+		&:before
+			content: ""
+			position: absolute
+			top: 0
+			bottom: 0
+			left: 40px
+			right: 40px
+			+border-radius(4px)
+			background: #ececec
+			z-index: 0
+	&.fixed
+		position: fixed
+		top: 0px
+		left: 0
+		right: 0
+		z-index: 99999  	 
 .nav__link
 	position: relative
 	height: 42px
@@ -118,6 +126,7 @@ body
 	left: 0
 	right: 0
 	text-align: center
+	z-index: 9999
 	span
 		display: inline-block
 		width: 15px
@@ -138,10 +147,10 @@ span.cycle-pager-active
 	height: 550px 
 	margin: 0 auto 
 	color: #242424
+	img
+		max-height: 100%
 .slide__content_1	 
-	background: url(../img/slide1.jpg) no-repeat
-.slide__content_2	 
-	background: url(../img/slide2.jpg) 0 50% no-repeat	
+	background: url(../img/slide1.jpg) no-repeat	
 .slide1__text1, .slide1__text2
 	position: absolute
 	top: 110px
@@ -202,7 +211,38 @@ span.cycle-pager-active
 		+hp_b
 		color: #ef4040
 		font-size: 40px
-		
+.slide-use
+	position: absolute
+	top: 30px
+	left: 30px
+	+hp_db
+	text-transform: uppercase
+	color: #542939
+	font-size: 17px
+	z-index: 2 
+	.hint
+		top: 30px
+		left: 0
+		width: 200px 
+		right: auto
+		font-size: 18px
+.slide8
+	.hint
+		width: 85px
+.slide9, .slide11
+	img
+		position: absolute
+		bottom: -40px
+		right: 0
+		height: 640px
+		max-height: initial
+		z-index: 1
+	.hint
+		width: 85px
+.slide10
+	.hint
+		width: 100px
+			 			
 // announce
 .announce
 	background: url(../img/pattern1.jpg)
