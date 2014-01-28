@@ -207,7 +207,7 @@ span.cycle-pager-active { background: #ff2241; }
 .team-member__img { width: 155px; height: 155px; margin: 0 auto 20px; -webkit-border-radius: 50%; -moz-border-radius: 50%; -ms-border-radius: 50%; -o-border-radius: 50%; border-radius: 50%; overflow: hidden; cursor: pointer; }
 .team-member__img img { width: 100%; height: auto; }
 
-.team-member__info { padding-left: 10px; }
+.team-member__info { padding-left: 10px; text-align: left; }
 .team-member__info .link-title { margin-bottom: 10px; }
 .team-member__info p { font-size: 15px; }
 
