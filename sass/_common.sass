@@ -69,8 +69,10 @@ body
 	width: 1024px
 	margin: 0 auto
 .header
+	position: relative
 	padding: 37px 0 0
-	margin-bottom: 50px 	
+	margin-bottom: 50px
+	z-index: 2 	
 .logo
 	display: block
 	margin: 0 auto 25px 
@@ -121,11 +123,11 @@ body
 	text-transform: uppercase
 .slider
 	position: relative
-	height: 550px
-	margin-bottom: 40px 	
+	height: 590px
+	z-index: 1 	
 .example-pager
 	position: absolute
-	bottom: 0px
+	bottom: 40px
 	left: 0
 	right: 0
 	text-align: center
@@ -180,7 +182,7 @@ span.cycle-pager-active
 .slide__content
 	position: relative
 	width: 880px
-	height: 550px 
+	height: 590px 
 	margin: 0 auto 
 	color: #242424
 	img
@@ -262,15 +264,21 @@ span.cycle-pager-active
 		width: 200px 
 		right: auto
 		font-size: 18px
+.slide7
+	img
+		position: relative
+		top: -40px		
 .slide8
 	.hint
 		width: 85px
 .slide9, .slide11
 	img
 		position: absolute
-		bottom: -40px
-		right: 0
-		height: 640px
+		bottom: 0px
+		left: -115px 
+		right: -115px
+		width: 1110px 
+		height: 725px
 		max-height: initial
 		z-index: 1
 	.hint
@@ -405,6 +413,9 @@ span.cycle-pager-active
 	+hp_db 
 	+border-radius(18px)
 	background: #532939
+	+transition(all 150ms linear)
+	&:hover
+		color: #ff2241
 .partners-info
 	text-align: center	
 .partners-info__title
@@ -835,7 +846,7 @@ span.cycle-pager-active
 	font-size: 14px
 	color: #fff
 	line-height: 1.2
-	+hp_m
+	//+hp_m
 	a
 		display: block
 		color: #fff
