@@ -99,7 +99,10 @@ body
 		top: 0px
 		left: 0
 		right: 0
-		z-index: 99999  	 
+		z-index: 99999
+		ul
+			&:before
+				display: none  	 
 .nav__link
 	position: relative
 	height: 42px
@@ -150,14 +153,15 @@ span.cycle-pager-active
 	background: #f4f4f4
 	cursor: pointer
 	z-index: 99999
-	&:hover
-		background: #ff2241 
 	&:before
 		content: ""
 		position: absolute
 		top: 18px
 		left: 22px
-		+s(nav-left-big)   	
+		+s(nav-left-big)
+	&:hover
+		&:before
+			+s(nav-left-big-hover)	   	
 .slider__next
 	left: auto
 	right: 30px
@@ -167,6 +171,9 @@ span.cycle-pager-active
 		top: 18px
 		left: 27px
 		+s(nav-right-big)
+	&:hover
+		&:before
+			+s(nav-right-big-hover)	
 .slider__item
 	width: 100% 
 	text-align: center
@@ -479,6 +486,8 @@ span.cycle-pager-active
 				background: #ff2241
 .tab-cont
 	padding: 0 50px
+.tab-cont__inner
+	min-height: 50px
 .brands-list
 	text-align: center
 	li
@@ -500,6 +509,12 @@ span.cycle-pager-active
 	color: #fff
 	font-size: 20px
 	text-transform: uppercase
+	&:before
+		content: ""
+		position: absolute
+		top: 11px
+		left: 20px
+		+s(plus)
 
 // smi
 .smi

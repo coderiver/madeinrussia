@@ -74,6 +74,15 @@ $(document).ready(function() {
         return false;
     });
 
+    // btn-add scroll
+
+    $(".add-btn").click(function(){
+        $('html, body').animate({
+            scrollTop: $(".request").offset().top - 35
+        }, 500);
+        return false;
+    });
+
     // window scroll
     
     $(window).scroll(function(){
